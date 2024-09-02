@@ -10,3 +10,4 @@ C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug
 C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\refint\ToggleCoreLibrary.dll
 C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.pdb
 C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\ref\ToggleCoreLibrary.dll
+C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.sourcelink.json
