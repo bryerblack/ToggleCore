@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleCoreLibrary", "ToggleCoreLibrary\ToggleCoreLibrary.csproj", "{70DE904B-6E04-4154-9F9F-1B7CEBC42F72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToggleCoreTest", "ToggleCoreTest\ToggleCoreTest.csproj", "{27D81F44-F0D4-4886-B899-DEF810DEFF55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70DE904B-6E04-4154-9F9F-1B7CEBC42F72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DE904B-6E04-4154-9F9F-1B7CEBC42F72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DE904B-6E04-4154-9F9F-1B7CEBC42F72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DE904B-6E04-4154-9F9F-1B7CEBC42F72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D81F44-F0D4-4886-B899-DEF810DEFF55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D81F44-F0D4-4886-B899-DEF810DEFF55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D81F44-F0D4-4886-B899-DEF810DEFF55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D81F44-F0D4-4886-B899-DEF810DEFF55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A02DF433-FF58-4432-B2FC-79BBD2049FD6}
+	EndGlobalSection
+EndGlobal
