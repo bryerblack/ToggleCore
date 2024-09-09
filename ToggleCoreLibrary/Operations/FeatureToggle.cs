@@ -33,7 +33,7 @@ namespace ToggleCoreLibrary.Operations
                 var model = _featureToggleDBMapper.Map(x);
                 var additionalRules = true;
                 if (!model.AdditionalRules.IsNullOrEmpty())
-                    additionalRules = checkAdditionalRules(model.AdditionalRules);
+                    additionalRules = CheckAdditionalRules(model.AdditionalRules);
                 if (model.Toggle && additionalRules)
                 {
                     context.Proceed();
@@ -43,7 +43,7 @@ namespace ToggleCoreLibrary.Operations
             }
         }
 
-        private bool checkAdditionalRules(Dictionary<string, List<string>> additionalRules)
+        private bool CheckAdditionalRules(Dictionary<string, List<string>> additionalRules)
         {
             bool rules = false;
             foreach (var rule in additionalRules)

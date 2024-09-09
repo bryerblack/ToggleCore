@@ -21,7 +21,7 @@ namespace ToggleCoreTest
             TestMethodOn();
         }
 
-        [FeatureToggle("FT3221")]
+        [FeatureToggle("FT0001")]
         public void TestMethodOn()
         {
             Console.WriteLine("enter TesteMethod() - On");
