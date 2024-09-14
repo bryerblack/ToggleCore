@@ -16,6 +16,7 @@ namespace ToggleCoreLibrary.Models
         public bool Toggle { get; set; }
         public FeatureToggleType? FeatureToggleType { get; set; }
         public DateOnly? CreationDate { get; set; }
+        public DateOnly? ExpirationDate { get; set; }
 
         [NotMapped]
         public Dictionary<string, List<string>> AdditionalRules { get; set; }
@@ -24,12 +25,13 @@ namespace ToggleCoreLibrary.Models
         public FeatureToggleModel() { }
 
         public FeatureToggleModel(string toggleId, bool toggle, FeatureToggleType? featureToggleType,
-            DateOnly? creationDate, Dictionary<string, List<string>>? additionalRules = null)
+            DateOnly? creationDate, DateOnly? expirationDate, Dictionary<string, List<string>>? additionalRules = null)
         {
             ToggleId = toggleId;
             Toggle = toggle;
             FeatureToggleType = featureToggleType;
             CreationDate = creationDate;
+            ExpirationDate = expirationDate;
             AdditionalRules = additionalRules ?? new Dictionary<string, List<string>> { };
         }
     }
@@ -38,7 +40,7 @@ namespace ToggleCoreLibrary.Models
     {
         RELEASE,
         EXPERIMENT,
-        PERMISSIONING,
-        OPS
+        PERMISSION,
+        OPERATION
     }
 }

@@ -11,3 +11,16 @@ C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug
 C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.pdb
 C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\ref\ToggleCoreLibrary.dll
 C:\Users\Visitante\source\repos\FeatureToggleLibrary\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.sourcelink.json
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\bin\Debug\net8.0\ToggleCoreLibrary.deps.json
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\bin\Debug\net8.0\ToggleCoreLibrary.dll
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\bin\Debug\net8.0\ToggleCoreLibrary.pdb
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.csproj.AssemblyReference.cache
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.AssemblyInfoInputs.cache
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.AssemblyInfo.cs
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.sourcelink.json
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.dll
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\refint\ToggleCoreLibrary.dll
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ToggleCoreLibrary.pdb
+C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\obj\Debug\net8.0\ref\ToggleCoreLibrary.dll

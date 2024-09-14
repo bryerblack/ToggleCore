@@ -42,6 +42,7 @@ namespace ToggleCoreLibrary.Operations
                 featureToggle.Toggle,
                 featureToggle.FeatureToggleType,
                 featureToggle.CreationDate,
+                featureToggle.ExpirationDate,
                 ruleString);
         }
     }

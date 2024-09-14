@@ -31,10 +31,22 @@ namespace ToggleCoreLibrary.Operations
             if (toggleId is string x)
             {
                 var model = _featureToggleDBMapper.Map(x);
+                var expired = false;
                 var additionalRules = true;
+                
+                // check aditional rules
                 if (!model.AdditionalRules.IsNullOrEmpty())
                     additionalRules = CheckAdditionalRules(model.AdditionalRules);
-                if (model.Toggle && additionalRules)
+                
+                // check if feature toggle is expired
+                if (model.ExpirationDate != null)
+                {
+                    if (model.ExpirationDate <= DateOnly.FromDateTime(DateTime.Now))
+                        expired = true;
+                }
+                
+                // implements feature toggle
+                if ((model.Toggle && additionalRules) || expired)
                 {
                     context.Proceed();
                 }
