@@ -17,13 +17,7 @@ namespace ToggleCoreLibrary.Operations
 
         public void Advise(MethodAdviceContext context)
         {
-            Console.WriteLine("A METHOD HAS BEEN INTERCEPTED");
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine(".");
-                Thread.Sleep(1000);
-            }
-
+            
             var method = context.TargetMethod;
             var customAttribute = method.CustomAttributes;
             var toggleId = customAttribute.FirstOrDefault()?.ConstructorArguments.First().Value;
@@ -50,8 +44,6 @@ namespace ToggleCoreLibrary.Operations
                 {
                     context.Proceed();
                 }
-                else
-                    Console.WriteLine("METHOD OFF - CANCELING DETECTION");
             }
         }
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToggleCoreLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5a3bcbbe715afb1aeae4fb094494f0a3171a245")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9496f20fcecb0af69c6c76365ee122972d85dc36")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToggleCoreLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToggleCoreLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

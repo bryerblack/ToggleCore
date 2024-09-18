@@ -2,6 +2,8 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +15,9 @@ namespace ToggleCoreLibrary.Operations
     public class FeatureToggleDbMapper : FeatureToggleMapper
     {
         public ApplicationDbContext Context { get; set; }
+        public static NameValueCollection section = (NameValueCollection)ConfigurationManager.GetSection("FeatureToggleConfig");
         public readonly DbContextOptions<ApplicationDbContext> contextOptions = new DbContextOptionsBuilder<ApplicationDbContext>()
-           .UseSqlServer(@"Server=(localdb)\featueCore;Database=toggleCoreTest;ConnectRetryCount=0;Integrated Security=SSPI;Integrated Security=true;TrustServerCertificate=True")
+           .UseSqlServer(@$"Server={section["server"]};Database={section["database"]};ConnectRetryCount=0;Integrated Security={section["integratedSecurity"]};TrustServerCertificate={section["trustServerCertificate"]}")
            .Options;
 
         public override FeatureToggleModel Map(string featureToggleId)
