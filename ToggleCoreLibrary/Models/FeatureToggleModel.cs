@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace ToggleCoreLibrary.Models
 {
-    [Table("featuretoggles")]
+    [Table("FeatureToggle")]
     [PrimaryKey(nameof(ToggleId))]
     public class FeatureToggleModel
     {
         public string ToggleId;
         public bool Toggle { get; set; }
-        public FeatureToggleType? FeatureToggleType { get; set; }
         public DateOnly? CreationDate { get; set; }
         public DateOnly? ExpirationDate { get; set; }
 
@@ -24,23 +23,14 @@ namespace ToggleCoreLibrary.Models
 
         public FeatureToggleModel() { }
 
-        public FeatureToggleModel(string toggleId, bool toggle, FeatureToggleType? featureToggleType,
-            DateOnly? creationDate, DateOnly? expirationDate, Dictionary<string, List<string>>? additionalRules = null)
+        public FeatureToggleModel(string toggleId, bool toggle, DateOnly? creationDate, 
+            DateOnly? expirationDate, Dictionary<string, List<string>>? additionalRules = null)
         {
             ToggleId = toggleId;
             Toggle = toggle;
-            FeatureToggleType = featureToggleType;
             CreationDate = creationDate;
             ExpirationDate = expirationDate;
             AdditionalRules = additionalRules ?? new Dictionary<string, List<string>> { };
         }
-    }
-
-    public enum FeatureToggleType
-    {
-        RELEASE,
-        EXPERIMENT,
-        PERMISSION,
-        OPERATION
     }
 }

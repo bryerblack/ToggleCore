@@ -14,7 +14,7 @@ namespace ToggleCoreLibrary.Operations
     {
         public ApplicationDbContext Context { get; set; }
         public readonly DbContextOptions<ApplicationDbContext> contextOptions = new DbContextOptionsBuilder<ApplicationDbContext>()
-           .UseSqlServer(@"Server=DESKTOP-IPRIRSK\SQLEXPRESS;Database=Test;ConnectRetryCount=0;Integrated Security=SSPI;Integrated Security=true;TrustServerCertificate=True")
+           .UseSqlServer(@"Server=(localdb)\featueCore;Database=toggleCoreTest;ConnectRetryCount=0;Integrated Security=SSPI;Integrated Security=true;TrustServerCertificate=True")
            .Options;
 
         public override FeatureToggleModel Map(string featureToggleId)
@@ -40,7 +40,6 @@ namespace ToggleCoreLibrary.Operations
             return new FeatureToggleModel(
                 featureToggle.ToggleId,
                 featureToggle.Toggle,
-                featureToggle.FeatureToggleType,
                 featureToggle.CreationDate,
                 featureToggle.ExpirationDate,
                 ruleString);

@@ -9,7 +9,7 @@ namespace ToggleCoreTest
         public static void Main(string[] args)
         {
             var contextOptions = new DbContextOptionsBuilder<ApplicationDbContext>()
-            .UseSqlServer(@"Server=DESKTOP-IPRIRSK\SQLEXPRESS;Database=Test;ConnectRetryCount=0;Integrated Security=SSPI;Integrated Security=true;TrustServerCertificate=True")
+            .UseSqlServer(@"Server=(localdb)\featueCore;Database=toggleCoreTest;ConnectRetryCount=0;Integrated Security=SSPI;Integrated Security=true;TrustServerCertificate=True")
             .Options;
 
             using var contextDb = new ApplicationDbContext(contextOptions);
