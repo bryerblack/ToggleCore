@@ -6,9 +6,9 @@ namespace ToggleCoreLibrary.Operations
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Constructor | AttributeTargets.Assembly | AttributeTargets.Module)]
     public class FeatureToggle : Attribute, IMethodAdvice
     {
-        public string FeatureToggleId { get; set; }
-        public FeatureToggleDbMapper _featureToggleDBMapper = new FeatureToggleDbMapper();
-        public DynamicRulesConfigMapper _rulesMapper = new DynamicRulesConfigMapper();
+        private string FeatureToggleId { get; set; }
+        private static FeatureToggleMapper _featureToggleDBMapper = new FeatureToggleDbMapper();
+        private static DynamicRulesMapper _rulesMapper = new DynamicRulesConfigMapper();
 
         public FeatureToggle(string featureToggleId)
         {
@@ -21,28 +21,33 @@ namespace ToggleCoreLibrary.Operations
             var method = context.TargetMethod;
             var customAttribute = method.CustomAttributes;
             var toggleId = customAttribute.FirstOrDefault()?.ConstructorArguments.First().Value;
+            var specialArgs = method.GetParameters().Where(x => x.GetCustomAttributes(typeof(ArgumentBeholder), false).Length > 0);
+            var isSpecialArgsNull = context.Arguments.Where((_, i) => specialArgs.Select(x => x.Position).Contains(i)).All(x => x == null);
 
-            if (toggleId is string x)
+            if ((!specialArgs.IsNullOrEmpty() && isSpecialArgsNull) || specialArgs.IsNullOrEmpty())
             {
-                var model = _featureToggleDBMapper.Map(x);
-                var expired = false;
-                var additionalRules = true;
-                
-                // check aditional rules
-                if (!model.AdditionalRules.IsNullOrEmpty())
-                    additionalRules = CheckAdditionalRules(model.AdditionalRules);
-                
-                // check if feature toggle is expired
-                if (model.ExpirationDate != null)
+                if (toggleId is string x)
                 {
-                    if (model.ExpirationDate <= DateOnly.FromDateTime(DateTime.Now))
-                        expired = true;
-                }
-                
-                // implements feature toggle
-                if ((model.Toggle && additionalRules) || expired)
-                {
-                    context.Proceed();
+                    var model = _featureToggleDBMapper.Map(x);
+                    var expired = false;
+                    var additionalRules = true;
+
+                    // check aditional rules
+                    if (!model.AdditionalRules.IsNullOrEmpty())
+                        additionalRules = CheckAdditionalRules(model.AdditionalRules);
+
+                    // check if feature toggle is expired
+                    if (model.ExpirationDate != null)
+                    {
+                        if (model.ExpirationDate <= DateOnly.FromDateTime(DateTime.Now))
+                            expired = true;
+                    }
+
+                    // implements feature toggle
+                    if ((model.Toggle && additionalRules) || expired)
+                    {
+                        context.Proceed();
+                    }
                 }
             }
         }
@@ -58,6 +63,16 @@ namespace ToggleCoreLibrary.Operations
                 }
             }
             return rules;
+        }
+
+        public static void SetFeatureToggleMapper(FeatureToggleMapper featureToggleMapper)
+        {
+            _featureToggleDBMapper = featureToggleMapper;
+        }
+
+        public static void SetAdditionalRulesMapper(DynamicRulesMapper dynamicRulesMapper)
+        {
+            _rulesMapper = dynamicRulesMapper;
         }
     }
 }

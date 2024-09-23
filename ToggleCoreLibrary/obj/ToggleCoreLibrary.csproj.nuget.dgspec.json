@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
         "projectName": "ToggleCoreLibrary",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

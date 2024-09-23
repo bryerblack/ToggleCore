@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <authors>ToggleCoreLibrary</authors>
     <description>Package Description</description>
-    <repository type="git" commit="9496f20fcecb0af69c6c76365ee122972d85dc36" />
+    <repository type="git" commit="b62c848fb04d9e42462de9a0b8952c64ed7ee2f1" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Azure.Identity" version="1.12.0" exclude="Build,Analyzers" />
