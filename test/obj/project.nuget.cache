@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Pc015xhAdLY+7FgH/V+U7QFCrq9+yFWB9H0ZxglcLxOlEwZlw+BMl7Mcxs4W1EjRWrEHUsUXVVR6MYhftlrsg==",
+  "dgSpecHash": "JvCzS3hdqk6QNOEfNC3JIdBj2v7SOid3mxe0+W4sy3f2Ch/1v2WrEnZp+yF1+XUJe8M9j+sF/nNXEYLJ2yD7Rg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\test.csproj",
+  "projectFilePath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\ToggleCoreTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Familia1\\.nuget\\packages\\azure.core\\1.40.0\\azure.core.1.40.0.nupkg.sha512",
     "C:\\Users\\Familia1\\.nuget\\packages\\azure.identity\\1.12.0\\azure.identity.1.12.0.nupkg.sha512",

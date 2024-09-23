@@ -2756,9 +2756,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\test.csproj",
-      "projectName": "test",
-      "projectPath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\test.csproj",
+      "projectUniqueName": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\ToggleCoreTest.csproj",
+      "projectName": "ToggleCoreTest",
+      "projectPath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\ToggleCoreTest.csproj",
       "packagesPath": "C:\\Users\\Familia1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\test\\obj\\",
       "projectStyle": "PackageReference",
