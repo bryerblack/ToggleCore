@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ToggleCoreLibrary</id>
+    <version>1.0.2</version>
+    <authors>ToggleCoreLibrary</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="fc8964ca47adaadeba7081b163375e585d3e6520" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Azure.Identity" version="1.12.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="8.0.8" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="8.0.8" exclude="Build,Analyzers" />
+        <dependency id="MrAdvice" version="2.16.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+        <dependency id="System.Configuration.ConfigurationManager" version="8.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Formats.Asn1" version="8.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\Familia1\Source\Repos\bryerblack\ToggleCore\ToggleCoreLibrary\bin\Release\net8.0\ToggleCoreLibrary.dll" target="lib\net8.0\ToggleCoreLibrary.dll" />
+  </files>
+</package>

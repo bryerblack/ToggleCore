@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G/l/h3l83JqN5YIQio6pFdZ/Pqwqq77LdAdTc/UWBjSEKVgraiesTgpPsVWQoe0Q6biBoy+eDEi6fPZRyU1tvQ==",
+  "dgSpecHash": "wuGvfuUZVSbF46WtUNi6/mL0UvI58cAOKs+AxAkvAhekGdnIfI1MPyMDsfwFU89OMwPY74BWpUlsBsYR1Z3bpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Familia1\\source\\repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Familia1\\.nuget\\packages\\azure.core\\1.40.0\\azure.core.1.40.0.nupkg.sha512",
     "C:\\Users\\Familia1\\.nuget\\packages\\azure.identity\\1.12.0\\azure.identity.1.12.0.nupkg.sha512",

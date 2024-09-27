@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace ToggleCoreLibrary.Operations
 {
-    public static class DynamicRulesHandler
+    public class DynamicRulesHandler
     {
-        private static DynamicRulesMapper mapper = new DynamicRulesConfigMapper();
+        private static DynamicRulesMapper mapper = null;
 
-        public static DynamicRulesMapper GetMapper() { return mapper; }
+        public DynamicRulesHandler() { }
+
+        public static DynamicRulesMapper GetMapper() 
+        {
+            if (mapper == null)
+            {
+                mapper = new DynamicRulesConfigMapper();
+            }
+            return mapper; 
+        }
 
         public static void SetMapper(DynamicRulesMapper dynamicRulesMapper)
         {

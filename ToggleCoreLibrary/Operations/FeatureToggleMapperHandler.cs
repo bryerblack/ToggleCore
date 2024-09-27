@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace ToggleCoreLibrary.Operations
 {
-    public static class FeatureToggleMapperHandler
+    public class FeatureToggleMapperHandler
     {
-        private static FeatureToggleMapper mapper = new FeatureToggleDbMapper();
+        private static FeatureToggleMapper mapper = null;
 
-        public static FeatureToggleMapper GetMapper() { return mapper;}
+        public FeatureToggleMapperHandler() { }
+
+        public static FeatureToggleMapper GetMapper() 
+        { 
+            if (mapper == null)
+            {
+                mapper = new FeatureToggleDbMapper();
+            }
+            return mapper;
+        }
 
         public static void SetMapper(FeatureToggleMapper featureToggleMapper)
         {
