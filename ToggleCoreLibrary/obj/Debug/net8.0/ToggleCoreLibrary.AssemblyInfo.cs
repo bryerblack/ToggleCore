@@ -13,11 +13,11 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("ToggleCoreLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1+4a9098b24aaec3f95399730981ba449ecaf8c3aa")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.2.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.2+88a1b4f44b02b5d60345554e923a03a0b1258db6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ToggleCoreLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ToggleCoreLibrary")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.2.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 
