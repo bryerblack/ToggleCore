@@ -7,8 +7,8 @@ namespace ToggleCoreLibrary.Operations
     public class FeatureToggle : Attribute, IMethodAdvice
     {
         private string FeatureToggleId { get; set; }
-        private static FeatureToggleMapper _featureToggleDBMapper = new FeatureToggleDbMapper();
-        private static DynamicRulesMapper _rulesMapper = new DynamicRulesConfigMapper();
+        private FeatureToggleMapper _featureToggleMapper = FeatureToggleMapperHandler.GetMapper();
+        private DynamicRulesMapper _rulesMapper = DynamicRulesHandler.GetMapper();
 
         public FeatureToggle(string featureToggleId)
         {
@@ -28,7 +28,7 @@ namespace ToggleCoreLibrary.Operations
             {
                 if (toggleId is string x)
                 {
-                    var model = _featureToggleDBMapper.Map(x);
+                    var model = _featureToggleMapper.Map(x);
                     var expired = false;
                     var additionalRules = true;
 
