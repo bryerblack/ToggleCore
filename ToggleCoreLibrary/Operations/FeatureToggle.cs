@@ -64,15 +64,5 @@ namespace ToggleCoreLibrary.Operations
             }
             return rules;
         }
-
-        public static void SetFeatureToggleMapper(FeatureToggleMapper featureToggleMapper)
-        {
-            _featureToggleDBMapper = featureToggleMapper;
-        }
-
-        public static void SetAdditionalRulesMapper(DynamicRulesMapper dynamicRulesMapper)
-        {
-            _rulesMapper = dynamicRulesMapper;
-        }
     }
 }
