@@ -1,5 +1,4 @@
 ﻿using ArxOne.MrAdvice.Advice;
-using Microsoft.IdentityModel.Tokens;
 
 namespace ToggleCoreLibrary.Operations
 {
@@ -24,7 +23,8 @@ namespace ToggleCoreLibrary.Operations
             var specialArgs = method.GetParameters().Where(x => x.GetCustomAttributes(typeof(ArgumentBeholder), false).Length > 0);
             var isSpecialArgsNull = context.Arguments.Where((_, i) => specialArgs.Select(x => x.Position).Contains(i)).All(x => x == null);
 
-            if ((!specialArgs.IsNullOrEmpty() && isSpecialArgsNull) || specialArgs.IsNullOrEmpty())
+            if ((!(specialArgs == null || specialArgs.Count() == 0) && isSpecialArgsNull) 
+                || (specialArgs == null || specialArgs.Count() == 0))
             {
                 if (toggleId is string x)
                 {
@@ -33,7 +33,7 @@ namespace ToggleCoreLibrary.Operations
                     var additionalRules = true;
 
                     // check aditional rules
-                    if (!model.AdditionalRules.IsNullOrEmpty())
+                    if (!(model.AdditionalRules == null || model.AdditionalRules.Count() == 0))
                         additionalRules = CheckAdditionalRules(model.AdditionalRules);
 
                     // check if feature toggle is expired

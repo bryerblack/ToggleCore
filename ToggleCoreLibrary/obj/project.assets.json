@@ -2735,11 +2735,11 @@
     "C:\\Users\\Familia1\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.2",
+    "version": "1.0.4",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Familia1\\source\\repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
       "projectName": "ToggleCoreLibrary",
-      "projectPath": "C:\\Users\\Familia1\\source\\repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
+      "projectPath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\ToggleCoreLibrary.csproj",
       "packagesPath": "C:\\Users\\Familia1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Familia1\\Source\\Repos\\bryerblack\\ToggleCore\\ToggleCoreLibrary\\obj\\",
       "projectStyle": "PackageReference",
