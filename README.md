@@ -27,9 +27,8 @@ There is two ways to connect your feature toggle database:
 		<add key="trustServerCertificate" value="true" />
 	</FeatureToggleConfig>
   </configuration>
-``
-  The section name has to obligatorily be "FeatureToggleConfig".
-  This configuration will use the base feature toggle mapper already implemented in the library, however it uses SqlServer.
+The section name has to obligatorily be "FeatureToggleConfig".
+This configuration will use the base feature toggle mapper already implemented in the library, however it uses SqlServer.
 * Houwever, if you use another database, such as PostgreSql, or use a feature toggle managment API like [Unleash](https://www.getunleash.io/), you can also connect them! **Simply create a new FeatureToggleMapper** and use the FeatureToggleMapperHandler.SetMapper(YourMapper). FeatureToggleMapper is a public interface implemented in the library used to implement a mapper that will translate the feature toggle data stored wherever it is, to a FeatureToggle object that can be interpreted by the custom attribute. Here is a sample of FeatureToggleMapper (this is the custom Mapper used by the library):
 
 ```c#
