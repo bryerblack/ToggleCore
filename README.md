@@ -143,7 +143,7 @@ If you intend to implement a code with multiple functions, but only one should b
 ```
 **Simply using the FeatureToggle attribute will not work**.
 
-However, you can use a variable to store the intended object and the FeatureToggle custom attribute will know if a code path was already executed or not. To do this use the *ref* keyword in the mathod parameters and the ```[ArgumentBeholder]``` custom attribute to signal that this parameter should be observed by the FeatureToggle attribute. Here is an example:
+However, you can use a variable to store an intended object resulted from a certin code path (like a response class) and the FeatureToggle custom attribute will know if a code path was already executed or not. To do this use the *ref* keyword in the mathod parameters and the ```[ArgumentBeholder]``` custom attribute to signal that this parameter should be observed by the FeatureToggle attribute. Here is an example:
 ```c#
 	    public Object TestMethod()
 	    {   
