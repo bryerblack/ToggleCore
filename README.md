@@ -88,7 +88,7 @@ Make sure to have the following data (the names are not obligatory, as long as t
 To use the additional rules, you can add values to an appSetings in an app.config file (it can be the same you used before) that will be compared with the arguments set in the AdditionalRules attribute of the FeatureToggleModel. Here is an example:
 ```xml
 	<appSettings>
-	<add key ="Country" value="br"/>
+		<add key ="Country" value="br"/>
 	</appSettings>
 ```
 This is set as the default way of using additional rules. However, just like the FeatureToggleMapper, you can extend the DynamicRulesMapper to create a dynamic mapper using customized data and rules. Simply create a customized DynamicRules class and set it as default using the ```DynamicRulesHandler.SetMapper(YourMapper)``` in your startup file.
