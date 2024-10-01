@@ -145,9 +145,9 @@ If you intend to implement a code with multiple functions, but only one should b
 
 However, you can use a variable to store an intended object resulted from a certin code path (like a response class) and the FeatureToggle custom attribute will know if a code path was already executed or not. To do this use the *ref* keyword in the mathod parameters and the ```[ArgumentBeholder]``` custom attribute to signal that this parameter should be observed by the FeatureToggle attribute. Here is an example:
 ```c#
-	    public Object TestMethod()
+	    public ResponseObject TestMethod()
 	    {   
-		Object result = null;
+		ResponseObject result = null;
 
 		Object1([ArgumentBeholder] ref result, condition1);
 		Object2([ArgumentBeholder] ref result, condition2);
@@ -161,7 +161,7 @@ However, you can use a variable to store an intended object resulted from a cert
 	    }
 	
 	    [FeatureToggle("FT0001")]
-	    public void Object1(ref Object result, bool condition)
+	    public void Object1(ref ResponseObject result, bool condition)
 	    {
 		if (condition)
 		{
@@ -170,7 +170,7 @@ However, you can use a variable to store an intended object resulted from a cert
 	    }
 	
 	    [FeatureToggle("FT1000")]
-	    public void Object2(ref Object result, bool condition)
+	    public void Object2(ref ResponseObject result, bool condition)
 	    {
 		if (condition)
 		{
