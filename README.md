@@ -125,6 +125,8 @@ Feature Toggle Rules:
 * If a feature toggle does not have expiration date, it will work indefinitly, use this if you do not want to set an expiration date;
 * If a feature toggle has an expiration date, the toggle will automaticly be considered on if the date has been reched. **Be warned!** Only set an expiration date if you are okey with this happening.
 
+These rules can be seen in the library's diagram below:
+
 ![image](https://github.com/user-attachments/assets/5b2f3e86-d280-48c5-ad41-ee58933920fc)
 
 ### Abrupt Returning code
