@@ -125,6 +125,8 @@ Feature Toggle Rules:
 * If a feature toggle does not have expiration date, it will work indefinitly, use this if you do not want to set an expiration date;
 * If a feature toggle has an expiration date, the toggle will automaticly be considered on if the date has been reched. **Be warned!** Only set an expiration date if you are okey with this happening.
 
+![image](https://github.com/user-attachments/assets/5b2f3e86-d280-48c5-ad41-ee58933920fc)
+
 ### Abrupt Returning code
 If you intend to implement a code with multiple functions, but only one should be executed, that is, a code with multiple returns like this:
 ```c#
