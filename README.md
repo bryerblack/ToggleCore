@@ -149,8 +149,8 @@ However, you can use a variable to store an intended object resulted from a cert
 	    {   
 		ResponseObject result = null;
 
-		Object1([ArgumentBeholder] ref result, condition1);
-		Object2([ArgumentBeholder] ref result, condition2);
+		Object1(ref result, condition1);
+		Object2(ref result, condition2);
 
 		if (result == null)
 		{
@@ -161,7 +161,7 @@ However, you can use a variable to store an intended object resulted from a cert
 	    }
 	
 	    [FeatureToggle("FT0001")]
-	    public void Object1(ref ResponseObject result, bool condition)
+	    public void Object1([ArgumentBeholder] ref ResponseObject result, bool condition)
 	    {
 		if (condition)
 		{
@@ -170,7 +170,7 @@ However, you can use a variable to store an intended object resulted from a cert
 	    }
 	
 	    [FeatureToggle("FT1000")]
-	    public void Object2(ref ResponseObject result, bool condition)
+	    public void Object2([ArgumentBeholder] ref ResponseObject result, bool condition)
 	    {
 		if (condition)
 		{
