@@ -126,7 +126,7 @@ Feature Toggle Rules:
 * If a feature toggle has an expiration date, the toggle will automaticly be considered on if the date has been reched. **Be warned!** Only set an expiration date if you are okey with this happening.
 
 ### Abrupt Returning code
-If you intend to implement a code with multiple functions, but only one should be executed, like this:
+If you intend to implement a code with multiple functions, but only one should be executed, that is, a code with multiple returns like this:
 ```c#
 	   public Object TestMethod()
 	   {
